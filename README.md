@@ -36,4 +36,6 @@ docker run -v $(pwd)/outputs:/app/outputs meal-worldbank
 - Parquet files → outputs/parquet/
 - Charts → outputs/ (PNG files)
 
+the results are in output folder in form of photos and the data fetched from worldBank API id in the data folder.
+
 This structure mirrors how MEAL teams organize analytical work for donors.
