@@ -4,6 +4,7 @@ This project demonstrates a simple, donor-ready MEAL (Monitoring, Evaluation, Ac
 data pipeline using **public World Bank indicators**.
 
 ## What this project does
+
 1. Downloads poverty and unemployment data for Kenya
 2. Cleans and validates the data (MEAL-style checks)
 3. Computes trends and year-on-year change
@@ -11,28 +12,26 @@ data pipeline using **public World Bank indicators**.
 5. Exports CSV and Parquet files for reporting / Power BI
 
 ## How to run
-### Local setup
-```bash
-pip install pandas requests matplotlib pyarrow
-python scripts/01_download_worldbank.py
-python scripts/02_analysis_and_outputs.py
-```
 
 ### Using Docker
+
 Ensure Docker is installed and running.
 
 Build and run with Docker Compose:
+
 ```bash
 docker-compose up --build
 ```
 
 Or manually:
+
 ```bash
 docker build -t meal-worldbank .
 docker run -v $(pwd)/outputs:/app/outputs meal-worldbank
 ```
 
 ## Outputs
+
 - CSV files → outputs/csv/
 - Parquet files → outputs/parquet/
 - Charts → outputs/ (PNG files)
