@@ -1,0 +1,6 @@
+services:
+  meal-analysis:
+    build: .
+    volumes:
+      - ./outputs:/app/outputs
+    command: ./run.sh
